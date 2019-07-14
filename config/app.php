@@ -123,6 +123,9 @@ return [
 
     'log' => env('APP_LOG', 'single'),
 
+    'api_weather_key' => env('API_WEATHER_KEY', 'none'),
+    'api_weather_link' => env('API_OPEN_WEATHER_LINK', 'none'),
+
     'log_level' => env('APP_LOG_LEVEL', 'debug'),
 
     /*
@@ -176,6 +179,7 @@ return [
         // App\Providers\BroadcastServiceProvider::class,
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
+        App\Providers\WeatherServiceProvider::class,
 
     ],
 
